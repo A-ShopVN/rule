@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.card {
+  padding: 20px;
+  width: 330px;
+  min-height: 370px;
+  border-radius: 20px;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 6px #dadada,
+               -5px -5px 6px #f6f6f6;
+  transition: 0.4s;
+  background-color: transparent;
+}
+
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e54a7;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 170px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  box-shadow: inset 8px 8px 10px #c3c3c3,
+              inset -8px -8px 10px #cfcfcf;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;  /* Ẩn phần ảnh vượt khung */
+}
+.card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Hoặc 'cover' nếu muốn ảnh phủ hết vùng */
+  border-radius: 15px;
+  display: block;
+}
+
+.card-body {
+  margin: 13px 0 0 10px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+}
+
+.footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #636363;
+}
+
+.by-name {
+  font-weight: 700;
+}
+.card-container {
+  display: flex;
+  gap: 20px; /* Khoảng cách giữa các card */
+  justify-content: center; /* Căn giữa cả nhóm card */
+  flex-wrap: wrap; /* Nếu màn hình nhỏ sẽ tự xuống dòng */
+}
+	</style>
+</head>
+<body>
+<div class="card-container"><div class="card">
+  <div class="card-image"><img src="https://i.pinimg.com/736x/80/a1/21/80a12120eff0a16d0876d6ba0c2dcde7.jpg" alt="image" class="card__img"></div>
+  <h3 class="card-title">Bước 1: Tra cứu</h3>
+  <p class="card-body">
+    Truy cập kho sách để tìm tên sách cần .
+  </p>
+  <p class="footer">Written by <span class="by-name">BCK Team</span> on <span class="date">31/02/25</span></p>
+</div>
+<!-- From Uiverse.io by Sashank02 --> 
+<div class="card">
+  <div class="card-image"><img src="https://i.pinimg.com/736x/cd/b8/76/cdb876e10d4d0bdbd688d3d8428f9bb2.jpg" alt="image" class="card__img"></div>
+  <p class="card-title">Bước 2: Điền đơn đăng kí</p>
+  <p class="card-body">
+   Vào trang đăng kí mượn và điền đầy đủ thông tin và biểu mẫu.
+  </p>
+  <p class="footer">Written by <span class="by-name">BCK Team</span> on <span class="date">31/02/25</span></p>
+</div>
+<!-- From Uiverse.io by Sashank02 --> 
+<div class="card">
+  <div class="card-image"><img src="https://i.pinimg.com/736x/cd/70/79/cd70799e2112e852d9cab796381432fb.jpg" alt="image" class="card__img">
+</div>
+  <p class="card-title">Bước 3: Nhận sách </p>
+  <p class="card-body">
+    Đến thư viện nhận sách sau khi đã đăng kí thành công.
+  </p>
+  <p class="footer">Written by <span class="by-name">BCK Team</span> on <span class="date">31/02/25</span></p>
+</div></div>
+
+</body>
+</html>
