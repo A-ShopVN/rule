@@ -7,10 +7,10 @@
 	<style>
 		.card {
   padding: 20px;
-  width: 330px;
-  min-height: 370px;
+  width: 270px;
+  height: fit-content;
   border-radius: 20px;
-  background: #e8e8e8;
+  background: transparent;
   box-shadow: 5px 5px 6px #dadada,
                -5px -5px 6px #f6f6f6;
   transition: 0.4s;
@@ -29,7 +29,7 @@
 }
 
 .card-image {
-  min-height: 170px;
+  min-height: fit-content;
   background-color: #c9c9c9;
   border-radius: 15px;
   box-shadow: inset 8px 8px 10px #c3c3c3,
@@ -66,6 +66,7 @@
 }
 .card-container {
   display: flex;
+  background-color: transparent;
   gap: 20px; /* Khoảng cách giữa các card */
   justify-content: center; /* Căn giữa cả nhóm card */
   flex-wrap: wrap; /* Nếu màn hình nhỏ sẽ tự xuống dòng */
@@ -74,6 +75,7 @@
 </head>
 <body>
 <div class="card-container"><div class="card">
+	
   <div class="card-image"><img src="https://i.pinimg.com/736x/80/a1/21/80a12120eff0a16d0876d6ba0c2dcde7.jpg" alt="image" class="card__img"></div>
   <h3 class="card-title">Bước 1: Tra cứu</h3>
   <p class="card-body">
